@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yumemiya-lab</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f5f5f7;
+    --card-bg: #ffffff;
+    --text: #1c1c1e;
+    --text-secondary: #6e6e73;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card-bg: #1c1c1e;
+      --text: #f5f5f7;
+      --text-secondary: #98989d;
+      --border: #38383a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 48px 20px;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+  }
+  p.lead {
+    color: var(--text-secondary);
+    margin: 0 0 40px;
+  }
+  .apps {
+    display: grid;
+    gap: 12px;
+  }
+  a.app-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease;
+  }
+  a.app-card:hover {
+    transform: translateY(-2px);
+  }
+  .app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    flex-shrink: 0;
+    background: #f5c400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+  .app-card .app-name {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .app-card .app-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>yumemiya-lab</h1>
+  <p class="lead">個人開発でリリースしているアプリの一覧です。</p>
+  <div class="apps">
+    <a class="app-card" href="./keep/">
+      <div class="app-icon">🔖</div>
+      <div>
+        <div class="app-name">keep</div>
+        <div class="app-desc">共有メニューから情報をフォルダ整理して保存</div>
+      </div>
+    </a>
+  </div>
+</main>
+</body>
+</html>
