@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>keep - サポート</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f5f5f7;
+    --card-bg: #ffffff;
+    --text: #1c1c1e;
+    --text-secondary: #6e6e73;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card-bg: #1c1c1e;
+      --text: #f5f5f7;
+      --text-secondary: #98989d;
+      --border: #38383a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 48px 20px;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 40px 0 16px;
+  }
+  .card {
+    padding: 20px 24px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+  .card a {
+    color: var(--text);
+    font-weight: 600;
+  }
+  .faq {
+    display: grid;
+    gap: 12px;
+  }
+  .faq-item {
+    padding: 16px 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+  .faq-item .q {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  p.note {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← keep</a>
+  <h1>サポート</h1>
+
+  <div class="card">
+    ご不明な点、不具合のご報告、ご要望などは以下のメールアドレスまでご連絡ください。<br><br>
+    <a href="mailto:yumemiya.lab@gmail.com">yumemiya.lab@gmail.com</a>
+    <p class="note">お問い合わせの際は、対象のアプリ名（keep）と、発生している内容・機種・iOSのバージョンを添えていただけるとスムーズです。</p>
+  </div>
+
+  <h2>よくあるご質問</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="q">保存したデータはどこに保存されますか？サーバーには送られませんか？</div>
+      <div class="a">保存したフォルダやアイテムはすべてお使いの端末内にのみ保存され、外部のサーバーに送信されることはありません。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">機種変更やアプリの再インストールでデータは消えますか？</div>
+      <div class="a">端末内にのみデータを保存している仕様上、機種変更やアプリの削除・再インストールでデータが失われる可能性があります。フォルダ一覧画面右上のメニューから「エクスポート」を行うと、保存済みのフォルダをファイルとして書き出せます。機種変更前や定期的なバックアップとしてご活用ください。書き出したファイルは「インポート」から読み込めます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">共有メニューに「keep」が表示されません</div>
+      <div class="a">共有メニューの下部にある「その他」または「表示を増やす」から、keepのスイッチをオンにしてください。一度オンにすれば、以降は共有メニューに表示されます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">「後で見る」フォルダの通知が届きません</div>
+      <div class="a">リマインダーの通知には端末の通知許可が必要です。「設定」アプリ →「keep」→「通知」で通知が許可されているかご確認ください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">広告について</div>
+      <div class="a">アプリ内にバナー広告を表示しています。広告の表示に伴い、広告識別子（IDFA）の利用について許諾をお願いする場合があります。詳細はプライバシーポリシーをご確認ください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">対応環境</div>
+      <div class="a">iPhone専用、iOS 17以降に対応しています。</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
+
