@@ -41,6 +41,11 @@
     text-decoration: none;
     font-size: 14px;
   }
+  .header-link {
+    display: inline-flex;
+    text-decoration: none;
+    color: inherit;
+  }
   header {
     display: flex;
     align-items: center;
@@ -82,10 +87,12 @@
 <body>
 <main>
   <a class="back" href="../">← yumemiya-lab</a>
-  <header>
-    <img class="app-icon" src="./icon-keep.png" alt="keep アイコン">
-    <h1>keep</h1>
-  </header>
+  <a class="header-link" href="https://apps.apple.com/jp/app/keep-file/id6791022239" target="_blank" rel="noopener">
+    <header>
+      <img class="app-icon" src="./icon-keep.png" alt="keep アイコン">
+      <h1>keep</h1>
+    </header>
+  </a>
   <p class="lead">複数のアプリやWebサイトで見つけた情報を、共有メニューからフォルダ別に保存できるアプリです。</p>
   <div class="links">
     <a class="link-card" href="./faq.html">よくある質問</a>
