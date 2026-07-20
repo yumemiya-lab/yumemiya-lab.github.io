@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WANT? - よくある質問</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f5f5f7;
+    --card-bg: #ffffff;
+    --text: #1c1c1e;
+    --text-secondary: #6e6e73;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --card-bg: #1c1c1e;
+      --text: #f5f5f7;
+      --text-secondary: #98989d;
+      --border: #38383a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 48px 20px;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .back {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0 0 32px;
+  }
+  .faq {
+    display: grid;
+    gap: 12px;
+  }
+  .faq-item {
+    padding: 16px 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+  }
+  .faq-item .q {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .faq-item .a {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← WANT?</a>
+  <h1>よくある質問</h1>
+
+  <div class="faq">
+    <div class="faq-item">
+      <div class="q">通知はいつ届きますか？</div>
+      <div class="a">商品を保存した瞬間から24時間後に、「まだ欲しいですか？」という判断確認の通知が届きます(設定画面の「通知タイミング」で変更できます。通常は24時間後です)。SafariやECアプリの共有機能から保存した場合も、共有した瞬間を起点に24時間後の通知が予約されるため、本体アプリを開かなくても通知は届きます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">通知の許可をしていないとどうなりますか？</div>
+      <div class="a">通知が届かないため、判断のタイミングをお知らせできません。ただし、確認できる状態になった商品はホーム画面に「確認できます」と表示されるので、アプリを開いたときにいつでも判断できます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">判断画面の「購入する」を選ぶとどうなりますか？</div>
+      <div class="a">商品ページが開き、状態が「購入検討」になります。この時点では「購入した」とは記録されません。購入検討中の商品はホームの一覧には表示されなくなりますが(すでに購入する意思を示しているため)、履歴画面では引き続き確認できます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">「購入検討」の後はどうなりますか？</div>
+      <div class="a">「購入する」を選んでから、設定した通知タイミング(通常24時間後)で購入確認の通知が届きます。「購入した」「購入しなかった」「悩むため後日通知(1日/3日/7日後から選択)」のいずれかを選べます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">「購入済み」になるのはいつですか？</div>
+      <div class="a">判断確認または購入確認の通知で「購入した」を選んだ時点で、状態が「購入済み」になります。商品詳細画面から早めに購入した場合も同様です。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">「購入済み」の後に届く通知はありますか？</div>
+      <div class="a">「購入した」を選んでから、設定した通知タイミングで満足度確認の通知が届きます。5段階で満足度を記録できます(あとで、を選んで記録をスキップすることもできます)。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">「さらに待つ」を選ぶとどうなりますか？</div>
+      <div class="a">選んだ日数(1日/3日/7日)後に、あらためて判断確認の通知が届きます。「今回は見送る」を選ぶまで、何度でも延長できます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">「ふり返り」タブの「今月」の件数は、何を基準に集計されていますか？</div>
+      <div class="a">商品を保存した月を基準に集計しています。前の月に保存して判断や購入が翌月にずれ込んだ場合、その保存月の「見送り」「購入」件数には反映されないことがあります。一方、「これまでの判断」(見送り率・購入率)は保存した月に関係なく、これまでの記録全体を対象に集計しています。「今月」カードは左右の矢印で3ヶ月前まで遡って確認できます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">「衝動買いチェック」と「買うと決めている」の違いは何ですか？</div>
+      <div class="a">「衝動買いチェック」は24時間の保留・通知の対象で、ふり返りタブの集計対象にもなります。「買うと決めている」は通知なしの単純な保存リストで、あらかじめ買うと決めているものを記録しておく用途のため、ふり返りタブの集計には含まれません。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">保存した商品の情報はどこに送信されますか？</div>
+      <div class="a">商品名・価格・判断結果などの記録は、すべてお使いの端末内にのみ保存されます。開発者のサーバーに送信することはありません。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">お問い合わせについて</div>
+      <div class="a">ご不明な点やご要望などは、<a href="../#contact">トップページのお問い合わせ</a>よりご連絡ください。</div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
