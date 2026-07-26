@@ -63,17 +63,6 @@
     font-size: 26px;
     margin: 0;
   }
-  .badge {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 999px;
-    background: rgba(255,159,10,0.15);
-    color: #ff9500;
-    margin-left: 8px;
-    vertical-align: middle;
-  }
   p.lead {
     color: var(--text-secondary);
     margin: 16px 0 40px;
@@ -98,10 +87,12 @@
 <body>
 <main>
   <a class="back" href="../">← yumemiya-lab</a>
-  <header>
-    <img class="app-icon" src="./icon-erabu.png" alt="Erabu アイコン">
-    <h1>Erabu<span class="badge">リリース予定</span></h1>
-  </header>
+  <a class="header-link" href="https://apps.apple.com/jp/app/erabu/id6793907028" target="_blank" rel="noopener">
+    <header>
+      <img class="app-icon" src="./icon-erabu.png" alt="Erabu アイコン">
+      <h1>Erabu</h1>
+    </header>
+  </a>
   <p class="lead">CSVで読み込んだ大量のアイデアや案を、カードを1件ずつスワイプして「採用・保留・不採用」に仕分けできるアプリです。</p>
   <div class="links">
     <a class="link-card" href="./privacy.html">プライバシーポリシー</a>
