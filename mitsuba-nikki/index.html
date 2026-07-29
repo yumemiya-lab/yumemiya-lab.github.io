@@ -41,6 +41,11 @@
     text-decoration: none;
     font-size: 14px;
   }
+  .header-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+  }
   header {
     display: flex;
     align-items: center;
@@ -82,10 +87,12 @@
 <body>
 <main>
   <a class="back" href="../">← yumemiya-lab</a>
-  <header>
-    <img class="app-icon" src="./icon-mitsuba-nikki.png" alt="みつば日記 アイコン">
-    <h1>みつば日記</h1>
-  </header>
+  <a class="header-link" href="https://apps.apple.com/jp/app/%E3%81%BF%E3%81%A4%E3%81%B0%E6%97%A5%E8%A8%98-3%E3%81%A4%E3%81%AE%E3%81%84%E3%81%84%E3%81%93%E3%81%A8/id6794611459" target="_blank" rel="noopener">
+    <header>
+      <img class="app-icon" src="./icon-mitsuba-nikki.png" alt="みつば日記 アイコン">
+      <h1>みつば日記</h1>
+    </header>
+  </a>
   <p class="lead">その日あった3つの良かったことを書き留めて、前向きな習慣を育てる日記アプリです。</p>
   <div class="links">
     <a class="link-card" href="./about.html">「3つのいいこと」について</a>
